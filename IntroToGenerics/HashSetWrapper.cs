@@ -1,4 +1,9 @@
-﻿using System;
+﻿/**************************************************
+ * A 'wrapper' class that inherits from HashSet
+ * Bill Nicholson
+ * nicholdw@ucmail.uc.edu
+ * ************************************************/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

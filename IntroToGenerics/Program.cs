@@ -15,6 +15,7 @@ namespace IntroToGenerics {
 
             DemonstrateOurGenericType();
             DemonstrateTheDictionary();
+            DemonstrateHashSet();
         }
         private static void DemonstrateOurGenericType() {
             GenericList<int> myIntList = new GenericList<int>();
@@ -74,9 +75,28 @@ namespace IntroToGenerics {
             double hourlyRate = programmingLanguagesAndHourlyRates["Kotlin"];
             Console.WriteLine("The hourly rate for Kotlin programmers is $" + hourlyRate);
             // Attempt to look up an entry that isn't there. An exception is thrown.
-            hourlyRate = programmingLanguagesAndHourlyRates["COBOL"];
-            Console.WriteLine("The hourly rate for Kotlin programmers is $" + hourlyRate);
+            // ToDo fix this exception
+//            hourlyRate = programmingLanguagesAndHourlyRates["COBOL"];
+//            Console.WriteLine("The hourly rate for Kotlin programmers is $" + hourlyRate);
+        }
+        private static void DemonstrateHashSet()
+        {
+            HashSet<String> myHashSet = new HashSet<String>();
+            myHashSet.Add("Mushroom");
+            myHashSet.Add("Pepperoni");
+            myHashSet.Add("Green Olives");
+            myHashSet.Add("Black Olives");
+            myHashSet.Add("Anchovies");
+            Console.WriteLine("HashSet = " + myHashSet.ToString()); // Yucky. Not what we want
 
+            HashSetWrapper<String> myHashSetInWrapper = new HashSetWrapper<String>();
+            myHashSetInWrapper.Add("Mushroom");
+            myHashSetInWrapper.Add("Pepperoni");
+            myHashSetInWrapper.Add("Green Olives");
+            myHashSetInWrapper.Add("Black Olives");
+            myHashSetInWrapper.Add("Anchovies");
+            Console.WriteLine("HashSet = " + myHashSetInWrapper.ToString()); // Yucky. Not what we want
         }
     }
 }
+

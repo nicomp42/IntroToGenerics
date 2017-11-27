@@ -17,9 +17,7 @@ namespace IntroToGenerics {
         /// <summary>
         /// Model of the Car
         /// </summary>
-        private String model {
-            get; set;
-        }
+        public String model {get; set;}
         /// <summary>
         /// Constructor
         /// </summary>

@@ -54,5 +54,21 @@ namespace IntroToGenerics {
             myStringList.Print();
             myCarList.Print();
         }
+        /// <summary>
+        /// We have a cool data type called a Dictionary that supports generics. Actually, 2 generics
+        /// </summary>
+        private static void DemonstrateTheDictionary() {
+            Dictionary<string, double> programmingLanguagesAndHourlyRates = new Dictionary<string, double>();       // Key/value pairs
+            programmingLanguagesAndHourlyRates.Add("Javascript", 15.00);
+            programmingLanguagesAndHourlyRates.Add("C", 50.00);
+            programmingLanguagesAndHourlyRates.Add("C++", 60.00);
+            programmingLanguagesAndHourlyRates.Add("Visual Basic", 14.00);
+            programmingLanguagesAndHourlyRates.Add("php", 35.00);
+            programmingLanguagesAndHourlyRates.Add("Kotlin", 100.00);
+            programmingLanguagesAndHourlyRates.Add("C#", 45.00);
+
+
+        }
+
     }
 }

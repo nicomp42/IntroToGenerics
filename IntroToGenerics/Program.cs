@@ -13,6 +13,10 @@ namespace IntroToGenerics {
     class Program {
         static void Main(string[] args) {
 
+            DemonstrateOurGenericType();
+            DemonstrateTheDictionary();
+        }
+        private static void DemonstrateOurGenericType() {
             GenericList<int> myIntList = new GenericList<int>();
             GenericList<String> myStringList = new GenericList<String>();
 
@@ -47,7 +51,7 @@ namespace IntroToGenerics {
             // This Works, almost
             myIntList.Sort();
             myStringList.Sort();
-//          myCarList.Sort();           // Uh Oh. This throws an exception.       You'll see
+            //          myCarList.Sort();           // Uh Oh. This throws an exception.       You'll see
 
             // Print the sorted lists
             myIntList.Print();
@@ -55,7 +59,7 @@ namespace IntroToGenerics {
             myCarList.Print();
         }
         /// <summary>
-        /// We have a cool data type called a Dictionary that supports generics. Actually, 2 generics
+        /// C# has a cool data type called a Dictionary that supports generics. Actually, 2 generics
         /// </summary>
         private static void DemonstrateTheDictionary() {
             Dictionary<string, double> programmingLanguagesAndHourlyRates = new Dictionary<string, double>();       // Key/value pairs
@@ -66,9 +70,13 @@ namespace IntroToGenerics {
             programmingLanguagesAndHourlyRates.Add("php", 35.00);
             programmingLanguagesAndHourlyRates.Add("Kotlin", 100.00);
             programmingLanguagesAndHourlyRates.Add("C#", 45.00);
-
+            // Look up an entry 'by key'
+            double hourlyRate = programmingLanguagesAndHourlyRates["Kotlin"];
+            Console.WriteLine("The hourly rate for Kotlin programmers is $" + hourlyRate);
+            // Attempt to look up an entry that isn't there. An exception is thrown.
+            hourlyRate = programmingLanguagesAndHourlyRates["COBOL"];
+            Console.WriteLine("The hourly rate for Kotlin programmers is $" + hourlyRate);
 
         }
-
     }
 }

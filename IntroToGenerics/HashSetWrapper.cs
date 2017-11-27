@@ -1,5 +1,7 @@
 ﻿/**************************************************
- * A 'wrapper' class that inherits from HashSet
+ * A 'wrapper' class that inherits from HashSet.
+ * The wrapper adds a better implementation of ToString()
+ *  because the inherited version of ToString isn useless for us.
  * Bill Nicholson
  * nicholdw@ucmail.uc.edu
  * ************************************************/

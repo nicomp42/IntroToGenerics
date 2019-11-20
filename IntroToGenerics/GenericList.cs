@@ -2,6 +2,7 @@
  * A simple example of using Generics in C#
  * Bill Nicholson
  * nicholdw@ucmail.uc.edu
+ * (c) Bill Nicholson
  * ************************************************/
 using System;
 using System.Collections.Generic;

@@ -5,18 +5,17 @@
  * ************************************************/
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IntroToGenerics {
     class Program {
         static void Main(string[] args) {
-
             DemonstrateOurGenericType();
             DemonstrateTheDictionary();
             DemonstrateHashSet();
         }
+        /// <summary>
+        /// Demonstrate cool things with Generics
+        /// </summary>
         private static void DemonstrateOurGenericType() {
             GenericList<int> myIntList = new GenericList<int>();
             GenericList<String> myStringList = new GenericList<String>();
@@ -79,6 +78,9 @@ namespace IntroToGenerics {
 //            hourlyRate = programmingLanguagesAndHourlyRates["COBOL"];
 //            Console.WriteLine("The hourly rate for Kotlin programmers is $" + hourlyRate);
         }
+        /// <summary>
+        /// Demonstrate the HashSet datatype
+        /// </summary>
         private static void DemonstrateHashSet()
         {
             HashSet<String> myHashSet = new HashSet<String>();

@@ -6,9 +6,6 @@
  * ************************************************/
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IntroToGenerics {
     /// <summary>
@@ -18,7 +15,9 @@ namespace IntroToGenerics {
     class GenericList<T> {      // It's a Generic! 
 
         private List<T> myList;
-
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public GenericList() {      // Constructor! Doesn't need a T !
             myList = new List<T>();
         }
